@@ -1,0 +1,7 @@
+{
+  "name": "Lavanderia Melipilla",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
