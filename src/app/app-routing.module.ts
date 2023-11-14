@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -42,7 +42,12 @@ const routes: Routes = [
   {
     path: 'historial-transacciones',
     loadChildren: () => import('./historial-transacciones/historial-transacciones.module').then( m => m.HistorialTransaccionesPageModule)
+  },
+  {
+    path: 'generar-reporte',
+    loadChildren: () => import('./generar-reporte/generar-reporte.module').then( m => m.GenerarReportePageModule)
   }
+
 ];
 
 @NgModule({

@@ -10,7 +10,7 @@ export class AppComponent {
     { title: 'Registro de ropa sucia', url: '/registro-ropa-sucia/', icon: 'paper-plane' },
     { title: 'Egreso de ropa limpia', url: '/egreso-ropa-limpia/', icon: 'heart' },
     { title: 'Historial de transacciones', url: '/historial-transacciones/', icon: 'archive' },
-    { title: 'Generar reportes', url: '/folder/trash', icon: 'trash' },
+    { title: 'Generar reportes', url: '/generar-reporte/', icon: 'trash' },
   ];
   public labels = [];
   constructor() {}
