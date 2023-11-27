@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
+  usuarioNombre = localStorage.getItem('usuarioNombre');
+
   public appPages = [
     { title: 'Inicio', url: '/home/', icon: 'home' },
     { title: 'Registro de ropa sucia', url: '/registro-ropa-sucia/', icon: 'paper-plane' },

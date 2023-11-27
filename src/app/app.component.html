@@ -4,7 +4,7 @@
       <ion-content>
         <ion-list id="inbox-list">
           <ion-list-header style="color: white;">Lavanderia hospital san jose</ion-list-header>
-          <ion-note style="color: white;">Bienvenido Medico @usuario</ion-note>
+          <ion-note style="color: white;">Bienvenido Medico {{ usuarioNombre }}</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
