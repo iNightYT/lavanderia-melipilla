@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./generar-reporte.page.scss'],
 })
 export class GenerarReportePage implements OnInit {
-
+  customCounterFormatter(inputLength: number, maxLength: number) {
+    return `${maxLength - inputLength} characters remaining`;
+  }
   constructor() { }
 
   ngOnInit() {

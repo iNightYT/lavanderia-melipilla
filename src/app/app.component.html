@@ -14,11 +14,13 @@
           </ion-menu-toggle>
         </ion-list>
 
-        <ion-list id="labels-list">
-
-          <ion-item *ngFor="let label of labels" lines="none">
-          </ion-item>
-        </ion-list>
+        <ion-footer>
+          <ion-toolbar>
+            <ion-button (click)="mostrarAlerta()">
+              <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
+            </ion-button>
+          </ion-toolbar>
+        </ion-footer>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

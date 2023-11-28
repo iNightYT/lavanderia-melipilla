@@ -24,7 +24,30 @@ export class LoginPage implements OnInit {
 
   async ingresar() {
     var f = this.formularioRegistro.value;
+    if (f.usuario === 'admin' && f.contrasena === 'admin') {
+      localStorage.setItem('autenticado_Admin', 'true');
+      this.router.navigate(['/home']);
+      const toast = await this.toastController.create({
+        message: 'Administrador inició sesión con éxito!!',
+        duration: 1500,
+        position: 'top',
+      });
 
+      await toast.present();
+      return;
+    }
+
+    // Validar el formulario
+    if (this.formularioRegistro.invalid) {
+      const alert = await this.alertController.create({
+        header: 'Mensaje',
+        message: 'Debes ingresar todos los datos',
+        buttons: ['OK'],
+      });
+
+      await alert.present();
+      return;
+    }
     var usuarioUsuario = localStorage.getItem('usuarioUsuario');
     var contrasenaUsuario = localStorage.getItem('contrasenaUsuario');
 

@@ -74,3 +74,10 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+ion-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  --ion-background-color: #5055ff
+}
