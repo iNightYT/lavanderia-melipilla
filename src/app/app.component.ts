@@ -11,7 +11,7 @@ export class AppComponent {
 
   public appPages = [
     { title: 'Inicio', url: '/home/', icon: 'home' },
-    { title: 'Registro de ropa Limpia', url: '/registro-ropa-limpia/', icon: 'paper-plane' },
+    { title: 'Registro de ropa Sucia', url: '/registro-ropa-limpia/', icon: 'paper-plane' },
     { title: 'Egreso de ropa', url: '/egreso-ropa/', icon: 'heart' },
     { title: 'Historial de transacciones', url: '/historial-transacciones/', icon: 'archive' },
     { title: 'Generar reportes', url: '/generar-reporte/', icon: 'trash' },

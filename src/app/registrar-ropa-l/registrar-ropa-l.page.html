@@ -3,14 +3,14 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>registrar-ropa-l</ion-title>
+    <ion-title>registrar-ropa-s</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content  [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">registrar-ropa-l</ion-title>
+      <ion-title size="large">registrar-ropa-s</ion-title>
     </ion-toolbar>
   </ion-header>
 <div id="container">
@@ -19,7 +19,7 @@
   <ion-input label="Cantidad" label-placement="floating" fill="outline" placeholder=""></ion-input>
   <ion-input label="Limpieza" label-placement="floating" fill="outline" placeholder=""></ion-input>
   <ion-input label="Tipo" label-placement="floating" fill="outline" placeholder=""></ion-input>
-  <ion-button>
+  <ion-button (click)="Alerta()">
     <ion-icon slot="start" name="add"></ion-icon>
     Registar ropa
   </ion-button>
