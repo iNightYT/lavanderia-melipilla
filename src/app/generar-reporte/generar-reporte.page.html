@@ -15,28 +15,28 @@
   </ion-header>
   <div id="container">
     <img src="/assets/img/3093748.png" alt="" width="235px">
-      <ion-list [inset]="true">
-        <ion-item>
-          <ion-label>Cantidad X de ropa limpia</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Cantidad X de ropa egresada</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Conteo X de ropa de este mes</ion-label>
-        </ion-item>
-        <ion-input style="color: white;"
+    <ion-list [inset]="true">
+      <ion-item>
+        <ion-label>Cantidad de ropa limpia: {{ conteoRopaLimpia }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad de ropa egresada: {{ conteoRopaEgresada }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Conteo de ropa de este mes: {{ conteoRopaMesActual }}</ion-label>
+      </ion-item>
+      <ion-input style="color: white;"
         id="custom-input"
         label="Mensaje para el reporte"
         labelPlacement="floating"
         [counter]="true"
         maxlength="50"
-        [counterFormatter]="customCounterFormatter"
+        [(ngModel)]="mensajeReporte"
       ></ion-input>
-      </ion-list>
-      <ion-button (click)="Alerta()">
-        <ion-icon slot="start" name="document-text-outline"></ion-icon>
-        Generar Reporte
-      </ion-button>
+    </ion-list>
+    <ion-button (click)="RegistrarReporte()">
+      <ion-icon slot="start" name="document-text-outline"></ion-icon>
+      Generar Reporte
+    </ion-button>
   </div>
 </ion-content>

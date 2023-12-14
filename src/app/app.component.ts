@@ -13,7 +13,7 @@ export class AppComponent {
     { title: 'Inicio', url: '/home/', icon: 'home' },
     { title: 'Registro de ropa Sucia', url: '/registro-ropa-limpia/', icon: 'paper-plane' },
     { title: 'Egreso de ropa', url: '/egreso-ropa/', icon: 'heart' },
-    { title: 'Historial de transacciones', url: '/historial-transacciones/', icon: 'archive' },
+    { title: 'Historial de ropa', url: '/historial-de-ropa/', icon: 'archive' },
     { title: 'Generar reportes', url: '/generar-reporte/', icon: 'trash' },
   ];
   public labels = [];
@@ -40,6 +40,7 @@ export class AppComponent {
             console.log('Redireccionando...');
             localStorage.removeItem('autenticado');
             localStorage.removeItem('autenticado_Admin');
+            localStorage.removeItem('usuarioNombre');
             window.history.back();
             const toast = await this.toastController.create({
               message: 'El usuario cerro sesion con exito!!!',
@@ -52,5 +53,12 @@ export class AppComponent {
     });
 
     await alert.present();
+  }
+  isAuthenticated(): boolean {
+    // Obtén el valor almacenado en localStorage
+    const autenticado = localStorage.getItem('autenticado');
+
+    // Devuelve true si está autenticado, de lo contrario, false
+    return autenticado === 'true';
   }
 }

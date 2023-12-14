@@ -14,11 +14,13 @@
           </ion-menu-toggle>
         </ion-list>
 
-        <ion-footer>
+        <ion-footer *ngIf="isAuthenticated()">
           <ion-toolbar>
-            <ion-button (click)="mostrarAlerta()">
-              <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
-            </ion-button>
+            <ion-buttons class="ion-justify-content-center" style="color: white;">
+              <ion-button (click)="mostrarAlerta()">
+                <ion-icon slot="icon-only" name="exit"></ion-icon>
+              </ion-button>
+            </ion-buttons>
           </ion-toolbar>
         </ion-footer>
       </ion-content>

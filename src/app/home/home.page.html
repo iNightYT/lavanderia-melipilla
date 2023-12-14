@@ -13,6 +13,17 @@
       <ion-title size="large">home</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <h1>Se generaron X Reportes</h1>
+  <div id="contenido">
+    <h1>Se generaron {{ cantidadReportes }} Reportes</h1>
+    <ion-button routerLink="/reportes">Ver reportes</ion-button>
+  </div>
 </ion-content>
+
+
+<ion-footer id="footer">
+  <ion-toolbar>
+    <ion-title>Acerca de Hospital San Jose</ion-title>
+    <p>©Copyright Hospital San Jose Melipilla 2023</p>
+    <h6>Desarrollador de la app: @NaitoLabs</h6>
+  </ion-toolbar>
+</ion-footer>

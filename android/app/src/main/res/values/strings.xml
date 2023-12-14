@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lavanderia Melipilla</string>
+    <string name="title_activity_main">Lavanderia Melipilla</string>
+    <string name="package_name">io.lavanderia.melipilla</string>
+    <string name="custom_url_scheme">io.lavanderia.melipilla</string>
+</resources>

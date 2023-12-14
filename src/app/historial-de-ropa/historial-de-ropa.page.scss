@@ -7,3 +7,14 @@ ion-toolbar{
   ion-content {
     --ion-background-color: #5055ff;
   }
+
+
+  #Titulo_tabla{
+    text-align: center;
+  }
+
+  ion-col{
+    display: flex;
+    justify-content: space-around;
+  }
+

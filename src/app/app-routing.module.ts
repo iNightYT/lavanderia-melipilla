@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'ver-ropa-egresada',
     loadChildren: () => import('./ver-ropa-egresada/ver-ropa-egresada.module').then( m => m.VerRopaEgresadaPageModule),
     canActivate: [AuntenticadoGuard]
+  },
+  {
+    path: 'reportes',
+    loadChildren: () => import('./reportes/reportes.module').then( m => m.ReportesPageModule)
   }
 
 

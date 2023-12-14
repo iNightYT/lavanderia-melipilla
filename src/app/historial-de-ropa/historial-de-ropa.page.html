@@ -13,7 +13,7 @@
       <ion-title size="large">historial_de_ropa</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-title>Ropas</ion-title>
+  <ion-title id="Titulo_tabla">Ropas</ion-title>
   <ion-grid>
     <ion-row>
       <ion-col>ID</ion-col>
@@ -22,5 +22,13 @@
       <ion-col>Egresado</ion-col>
       <ion-col>Hora</ion-col>
     </ion-row>
-  </ion-grid>
+ <!-- Iterar sobre el historial y mostrar los datos -->
+ <ion-row *ngFor="let registro of historial">
+  <ion-col>{{ registro.id }}</ion-col>
+  <ion-col>{{ registro.medico }}</ion-col>
+  <ion-col>{{ registro.registro }}</ion-col>
+  <ion-col>{{ registro.egresado }}</ion-col>
+  <ion-col>{{ registro.hora }}</ion-col>
+</ion-row>
+</ion-grid>
 </ion-content>
